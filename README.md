@@ -13,86 +13,58 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-# Flight Notifier
 
-## Overview
+### `npm test`
 
-Flight Notifier is a React-based web application designed to provide users with real-time information about flights. By entering a flight number and departure date, users can get detailed updates on the flight's current status, including live location, scheduled time, and arrival time. The application also features a map for visual tracking and allows users to subscribe for notifications about changes in the flight’s schedule, terminal, or gate.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Key Features
+### `npm run build`
 
-### Flight Information Input
-![image](https://github.com/user-attachments/assets/48b38d23-13e3-430b-8151-d2a024359059)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- **Flight Number:** Users can input the flight number (e.g., AA123) into a text field.
-- **Departure Date:** Users select the departure date from a date picker.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Real-Time Flight Details
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![image](https://github.com/user-attachments/assets/644689b2-adaf-4de2-b2aa-a939b7072cf5)
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- **Live Location:** Displays the real-time location of the flight on a map, showing its current latitude and longitude.
-- **Scheduled Time:** Shows the flight’s scheduled departure and arrival times.
-- **Arrival Time:** Provides the estimated arrival time based on current data.
-- **Map Integration:** A map component visually represents the flight’s current position, helping users track the flight’s journey.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Subscription for Updates
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-![image](https://github.com/user-attachments/assets/912bacf1-13bc-4fdb-a035-793b903f49b4)
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-- **Email and Phone Number Input:** Users can enter their email address and phone number to subscribe to updates.
-- **Notifications:** Subscribed users receive notifications about important changes, such as:
-  - **Terminal Changes:** Alerts if the departure or arrival terminal changes.
-  - **Gate Changes:** Notifications if there are changes to the departure or arrival gate.
-  - **Schedule Changes:** Updates on any modifications to the flight’s schedule.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## User Experience
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### User Interface
-- **Input Form:** A form for users to enter the flight number and select the departure date.
-- **Flight Ticket Display:** Once the flight details are fetched, the application displays:
-  - Airline name
-  - Flight number
-  - Departure and arrival times
-  - Source and destination stations
-- **Map Component:** Shows the live location of the flight on a map for visual tracking.
-- **Subscription Form:** Allows users to subscribe to receive updates via email and phone.
+### Code Splitting
 
-### Data Handling
-- **API Integration:** Utilizes an external API to fetch real-time flight data based on user inputs.
-- **Error Handling:** Provides user feedback if there are errors with fetching flight data or subscribing to updates.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Interactive Elements
-- **Submit Button:** Triggers the API call to get flight details.
-- **Subscribe Button:** Submits the user’s contact information for notifications.
+### Analyzing the Bundle Size
 
-## Technical Stack
-- **Frontend Framework:** React
-- **State Management:** React hooks for managing form input and flight data
-- **API Integration:** Axios or Fetch API to make HTTP requests to the flight data API
-- **Map Component:** Integration with mapping services (e.g., Google Maps, Mapbox) for displaying the flight’s location
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Example Usage
+### Making a Progressive Web App
 
-1. **Enter Flight Number and Date:**
-   - User inputs "AA123" as the flight number and selects "2024-07-29" as the departure date.
-   - Clicks the "Get Flight Details" button.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-2. **View Flight Details:**
-   - The app fetches the flight information and displays:
-     - The airline's name
-     - Scheduled departure and arrival times
-     - Live flight location on the map
-     - Source and destination stations
+### Advanced Configuration
 
-3. **Subscribe for Updates:**
-   - User enters their email and phone number.
-   - Clicks the "Click here to subscribe" button to receive notifications about any changes related to the flight.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Installation
+### Deployment
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/flight-notifier.git
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
