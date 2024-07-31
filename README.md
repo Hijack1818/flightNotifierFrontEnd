@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Back-end Link 
+https://github.com/Hijack1818/flightNotifier
 
 ## Available Scripts
 
@@ -11,8 +12,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 # Flight Notifier
 
 ## Overview
@@ -29,7 +28,12 @@ Flight Notifier is a React-based web application designed to provide users with 
 
 ### Real-Time Flight Details
 
-![image](https://github.com/user-attachments/assets/644689b2-adaf-4de2-b2aa-a939b7072cf5)
+![image](https://github.com/user-attachments/assets/c6158267-04ff-4571-a7c1-7cc2cf96c600)
+
+### Loading Screen
+
+![image](https://github.com/user-attachments/assets/c23e3cca-a1f6-4e63-9a37-c990e35be679)
+
 
 
 - **Live Location:** Displays the real-time location of the flight on a map, showing its current latitude and longitude.
@@ -39,7 +43,10 @@ Flight Notifier is a React-based web application designed to provide users with 
 
 ### Subscription for Updates
 
-![image](https://github.com/user-attachments/assets/912bacf1-13bc-4fdb-a035-793b903f49b4)
+![image](https://github.com/user-attachments/assets/9fe40801-ab47-431c-a106-8cfe11b2bf6e)
+
+
+![image](https://github.com/user-attachments/assets/9d93848c-edaf-4e15-b85d-080ca7162cb7)
 
 
 - **Email and Phone Number Input:** Users can enter their email address and phone number to subscribe to updates.
