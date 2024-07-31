@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css'
-import { InputFlightForm } from './InputFlight/inputFlightForm';
+import { InputFlightForm } from './InputFlight/InputFlightForm';
 import { OutputFlight } from './OutputFlight/outputFlight';
+
 
 function App() {
   const [data, setData] = useState(null);

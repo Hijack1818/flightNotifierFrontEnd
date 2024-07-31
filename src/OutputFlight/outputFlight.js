@@ -1,41 +1,8 @@
-import Map from '../Map/map';
-import axios from 'axios'
-import { useState } from 'react';
-import './outputFlight.css'
+import Map from '../Map/Map';
+import { Subscribe } from '../Subscribe/subscribe';
+import './OutputFlight.css'
 
 export const OutputFlight = ({data}) =>{
-
-    const [entityData, setEntityData] = useState(null);
-
-    const subscribeHandler = (e) =>{
-        e.preventDefault();
-        setEntityData({
-                "flightNumber":data['data'][0]['flight']['iata'],
-                "estimatedTime":data['data'][0]["departure"]["estimated"].split('+')[0],
-                "scheduledTime":data['data'][0]["departure"]["scheduled"].split('+')[0],
-                "terminal":data['data'][0]["departure"]["terminal"],
-                "gate":data['data'][0]["departure"]["gate"],
-                "delay":data['data'][0]["departure"]["delay"],
-                "timeZone":data['data'][0]["departure"]["timezone"],
-                "userList":[{
-                "email":e.target.email.value,
-                "phoneNumber":e.target.number.value,
-                "travelDate":data['data'][0]["departure"]["scheduled"].split('+')[0],
-                "userid":null,
-                "flight":null
-                }]
-            });
-            axios.post('http://localhost:8080/subscribe', entityData)
-            .then(response => {
-                console.log(response)
-            })
-            .catch(error => {
-                console.error('There was an error sending the data!', error);
-            });
-        }
-        
-    
-
     return (
     <>
         {data && data['data'][0] && (
@@ -79,24 +46,8 @@ export const OutputFlight = ({data}) =>{
                 <div className="ticket-footer">
                   <p>Thank you for flying with us!</p>
                 </div>
-  
-                <form onSubmit={subscribeHandler} className="form">
-                  <label>
-                    Enter email or phone number to subscribe
-                    <input
-                      type="text"
-                      name="email"
-                      placeholder="Email"
-                    />
-                    <input
-                      type="text"
-                      name="number"
-                      placeholder="Phone Number"
-                    />
-                  </label>
-                  <button type="submit">Click here to subscribe</button>
-                </form>
               </div>
+              <Subscribe data={data}></Subscribe>
             </div>
           )}
     </>
